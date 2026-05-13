@@ -1,10 +1,12 @@
 {
 	"name": "obsidian-headless",
-	"version": "0.0.9",
+	"version": "0.0.9-bnewbold.1",
 	"description": "Headless client for Obsidian services",
 	"main": "cli.js",
 	"bin": {
-		"ob": "cli.js"
+		"ob": "cli.js",
+		"obsidian-sync-install": "scripts/obsidian-sync-install.sh",
+		"obsidian-syncctl": "scripts/obsidian-syncctl.sh"
 	},
 	"engines": {
 		"node": ">=22.0.0"
@@ -22,7 +24,9 @@
 		"cli.js",
 		"btime",
 		"package.json",
-		"README.md"
+		"README.md",
+		"scripts",
+		"systemd"
 	],
 	"keywords": [
 		"obsidian",
@@ -37,6 +41,9 @@
 		"url": "https://github.com/obsidianmd/obsidian-headless"
 	},
 	"author": "Dynalist Inc.",
+	"contributors": [
+		"B.Newbold"
+	],
 	"license": "UNLICENSED",
 	"dependencies": {
 		"better-sqlite3": "12.6.2",
